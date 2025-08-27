@@ -1,0 +1,19 @@
+Javascript 
+- Variables
+- Arrays
+- Objects
+- Functions
+- Destructing
+
+
+=> Intro
+=> setting up the development environment
+=> Fundamentals of Typescript
+=> Configuring the Typescript
+=> Debugging the Typescript
+
+
+
+=> superset of JS  | created and maintained by Microsoft
+
+- 

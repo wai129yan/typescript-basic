@@ -106,3 +106,5 @@ const user21: UserWithoutRole = {
     // role: "user"
 }
 console.log("user2", user21);
+
+console.log('*************');

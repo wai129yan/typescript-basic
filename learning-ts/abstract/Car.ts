@@ -1,5 +1,4 @@
-"use strict"
-import { Vehicle } from "./Vehicle";
+import { Vehicle } from "./Vehicle.js";
 
 export class Car extends Vehicle {
     constructor(make: string, model: string, color: string) {

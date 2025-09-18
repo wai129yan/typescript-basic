@@ -1,3 +1,5 @@
+////ဒါဟာ မူလ object type (ဥပမာ User) ထဲက လိုအပ်တဲ့ property (key) အချို့ကိုသာ ရွေးချယ်ပြီး အသစ် type တစ်ခု ဖန်တီးဖို့ အသုံးပြုပါတယ်။
+
 interface User {
     id: number,
     name: string,
@@ -22,7 +24,12 @@ console.log("user2", user2);
 
 console.log("***************");
 
+
+
+
 //partial (make all property optional)
+
+
 const mgmg: UserWithIdAndEmail = {
     id: 2,
     email: "koko@example.com",
@@ -40,6 +47,7 @@ console.log("mgmg2", mgmg2);
 console.log("***************");
 
 //required (make all property required)
+
 interface RequiredUser {
     id: number,
     name?: string, //optional
@@ -69,7 +77,11 @@ console.log("bobo2", bobo2);
 
 console.log("***************");
 
+
+
+
 //Record<K/T>
+
 type UserRoles = 'admin' | 'user' | 'guest';
 type UserA = Record<UserRoles, string | number>;
 const userA: UserA = {

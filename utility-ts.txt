@@ -1,0 +1,10 @@
+Utility Type	ရည်ရွယ်ချက်
+
+=> Partial<T>	T ထဲက property တွေကို optional လုပ်တယ်
+=> Required<T>	T ထဲက optional တွေကို required ပြန်လုပ်တယ်
+=> Readonly<T>	Property တွေကို read-only ဖြစ်အောင်လုပ်တယ်
+=> Pick<T, K>	T ထဲက K key တွေကိုသာယူတယ်
+=> Omit<T, K>	T ထဲက K key တွေကိုဖျက်ပြီး ကျန်တာယူတယ်
+=> Record<K, T>	Key တွေကို T type အဖြစ် assign လုပ်တယ်
+=> ReturnType<T>	Function T ရဲ့ return type ကိုယူတယ်
+=> Parameters<T>	Function T ရဲ့ parameter type array ကိုယူတယ်

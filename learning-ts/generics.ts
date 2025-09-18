@@ -3,6 +3,9 @@ function identity(arg: any): any {
 }
 
 //generics
+//လိုချင်တဲ့ type ကို parameter အနေနဲ့ပေးပြီး အသုံးပြုနိုင်စေတဲ့ TypeScript နည်းလမ်း
+
+
 let a = 10;
 // a = "apple";
 console.log('a', a);
@@ -96,6 +99,9 @@ let registerForm: IForm<String | Number | boolean, Number> = {
     }
 }
 console.log(registerForm);
+
+
+
 
 function infoUser<T, U>(obj1: T, obj2: U): T & U {
     return { ...obj1, ...obj2 };

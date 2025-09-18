@@ -4,7 +4,6 @@ import { ProgrammingLanguage } from "./ProgrammingLanguage";
 
 
 
-
 export class Company extends Entity {
     constructor(
         id: string,
@@ -17,7 +16,7 @@ export class Company extends Entity {
         return `Company: ${this.name},Number of Developers:${this.developers.length}`;
     }
 
-    displayDevelopers(): void {
+    displayDevelopers(): void {   //company own
         this.developers.forEach(dev => {
             dev.displayInfo();
         })
@@ -26,13 +25,21 @@ export class Company extends Entity {
 
 const js = new ProgrammingLanguage("2", "JavaScript", "Object-Oriented");
 const python = new ProgrammingLanguage("3", "Python", "OOP");
+
 // console.log(js);
-// console.log(python);
+// console.log( js.getDescription());
+ // console.log(python);
 const dev1 = new Developer("1", "Kyaw Wai Yan", js);
 const dev2 = new Developer("2", "Aung Aung", python);
+
 const company = new Company("1", "Google", [dev1, dev2]);
-//console.log(company);
+
+//console.log(dev1);
 company.displayDevelopers();
+
+
+// //console.log(company);
+// company.displayDevelopers();
 
 // company.developers.forEach(dev => {
 //     dev.displayInfo();
@@ -42,6 +49,6 @@ company.displayDevelopers();
 //     console.log(dev.name,dev.favoriteLanguage.name);
 // })
 
-company.developers.forEach(dev => {
-    console.log(dev.name, dev.favoriteLanguage.name);;
-})
+// company.developers.forEach(dev => {
+//     console.log(dev.name, dev.favoriteLanguage.name);;
+// })

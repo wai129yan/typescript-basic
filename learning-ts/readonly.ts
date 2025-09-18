@@ -17,9 +17,11 @@ const user15: ReadOnlyUser = {
     name: "user15"
 }
 //user15.name = "user33"
-console.log("user15", user15)
+console.log("user151", user15)
 
 console.log('*****************');
+
+
 
 //Exclude <T ,U> (remove and re-new) remove from union type
 

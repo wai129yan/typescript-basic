@@ -73,6 +73,7 @@ console.log('page40', page40);
 console.log("****************");
 
 //omit generic built-in utilities type
+//တစ်ခုသော type ထဲက မလိုချင်တဲ့ key တွေကို ဖြုတ်ချင်တဲ့အခါ အသုံးပြုပါတယ်။
 interface User {
     id: number,
     name: string,
@@ -83,6 +84,7 @@ interface User {
 
 const mgmg: Omit<User, "id" | "password" | "role"> = //omit id, password, role
 {
+    //role:"admin", //error 
     name: "mgmg",
     email: "mgmg@example.com",
 }
